@@ -1,5 +1,5 @@
 <template>
-  <section class="py-[10rem]">
+  <section class="pt-[5rem]">
     <div class="text-center">
       <div class="flex justify-center gap-10 items-center">
         <img

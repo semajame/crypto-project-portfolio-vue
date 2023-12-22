@@ -4,7 +4,7 @@
   >
     <div>
       <a href="/" v-scrollto="'home'">
-        <img :src="logo" alt="Crypto Logo" class="w-[120px]" />
+        <img :src="logo" alt="Crypto Logo" class="w-[250px]" />
       </a>
     </div>
     <div>
@@ -111,7 +111,7 @@ export default {
 
   data() {
     return {
-      logo: "https://assets-global.website-files.com/5f8f28722b0eae892596eb35/5fac14536bfe49d6412e1990_logo-crypto-template.svg",
+      logo: "https://assets-global.website-files.com/62ea94aa50fb59ad3ea476f0/62ead07c4e3c0613c01dd91c_logo-cryptocurrency-template.svg",
 
       routerLinks: [
         {
@@ -124,8 +124,8 @@ export default {
           link: "Market",
         },
         {
-          scrollTo: "contact",
-          link: "Contact",
+          scrollTo: "join",
+          link: "Join",
         },
       ],
 

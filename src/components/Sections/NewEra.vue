@@ -1,5 +1,5 @@
 <template>
-  <section class="text-white p-10">
+  <section class="text-white p-10 pb-[10rem]">
     <div class="text-center">
       <h2 class="pb-10 text-6xl">
         {{ header }}

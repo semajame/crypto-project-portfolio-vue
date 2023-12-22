@@ -1,5 +1,5 @@
 <template>
-  <section class="pb-[10rem]">
+  <section class="pb-[15rem]">
     <div>
       <h2 class="text-center text-md font-bold text-slate-300 uppercase p-10">
         Crypto app has been featured on

@@ -1,14 +1,14 @@
 <template>
-  <section class="pt-[5rem]">
+  <section class="pt-[5rem] pb-[10rem]">
     <div class="text-center">
       <div class="flex justify-center gap-10 items-center">
         <img
           :src="bitcoin"
           alt="Bitcoin Image"
-          class="w-[100px] h-[100px] animate-slow-bounce"
+          class="w-[100px] h-[100px] animate-slow-bounce max-sm:w-[80px] max-sm:h-[80px]"
         />
         <div>
-          <h2 class="text-white text-8xl uppercase font-normal">
+          <h2 class="text-white joinclamp uppercase font-normal">
             {{ join }}
             <span
               class="block font-bold bg-gradient-to-tr from-[#ac50ef] via-[#7059fb] to-[#2ecff6] text-[#6248ff] text-transparent bg-clip-text"
@@ -20,7 +20,7 @@
         <img
           :src="ethereum"
           alt="Ethereum Image"
-          class="w-[100px] h-[100px] animate-slow-bounce"
+          class="w-[100px] h-[100px] animate-slow-bounce max-sm:w-[80px] max-sm:h-[80px]"
         />
       </div>
 

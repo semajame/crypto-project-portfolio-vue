@@ -4,7 +4,7 @@
   >
     <div>
       <a href="/" v-scrollto="'home'">
-        <img :src="logo" alt="Crypto Logo" class="w-[250px]" />
+        <img :src="logo" alt="Crypto Logo" class="w-[250px] max-sm:w-[200px]" />
       </a>
     </div>
     <div>
@@ -14,10 +14,10 @@
 
       <nav>
         <ul
-          class="flex items-center max-sm:hidden max-sm:absolute max-sm:bottom-0 max-sm:left-0 max-sm:flex-col max-sm:right-0 max-sm:top-0 max-sm:z-20 max-sm:h-[100vh] max-sm:overflow- max-sm:backdrop-blur-sm max-sm:text-center max-sm:items-stretch max-sm:bg-[#000000c5]"
+          class="flex items-center max-sm:hidden max-sm:absolute max-sm:bottom-0 max-sm:left-0 max-sm:flex-col max-sm:right-0 max-sm:top-0 max-sm:z-20 max-sm:h-[100vh] max-sm:overflow- max-sm:backdrop-blur-sm max-sm:text-center max-sm:items-stretch max-sm:bg-[#000000d0]"
         >
           <div class="flex justify-end pr-5">
-            <button class="hidden max-sm:block max-sm:my-9" id="closeButton">
+            <button class="hidden max-sm:block max-sm:my-7" id="closeButton">
               <img :src="close" alt="Menu Close" class="w-[2rem] h-[2rem]" />
             </button>
           </div>
@@ -38,7 +38,7 @@
       </nav>
     </div>
   </header>
-  <main class="pb-[5rem] pt-[10rem] relative" id="home">
+  <main class="pb-[5rem] pt-[8rem] relative" id="home">
     <div>
       <h1
         class="text-white font-extrabold w-[800px] clamp mt-7 mb-10 mx-auto text-center max-sm:w-full"
@@ -47,19 +47,19 @@
       </h1>
 
       <p
-        class="text-slate-300 font-sans my-5 text-xl w-[800px] text-center mx-auto px-3 max-sm:paraclamp"
+        class="text-slate-300 font-sans my-5 text-xl w-[800px] text-center mx-auto px-3 max-sm:w-full max-sm:text-sm"
       >
         {{ paragraph }}
       </p>
 
       <div class="flex gap-8 my-8 justify-center mt-[4rem]">
         <button
-          class="bg-gradient-to-tr from-[#ac50ef] via-[#7059fb] to-[#2ecff6] text-white font-bold rounded-[10px] uppercase tracking-wider text-sm px-8 py-6"
+          class="bg-gradient-to-tr from-[#ac50ef] via-[#7059fb] to-[#2ecff6] text-white font-bold rounded-[10px] uppercase tracking-wider text-sm px-8 py-6 max-sm:px-7 max-sm:py-4 max-sm:text-[0.8rem]"
         >
           {{ getStarted }}
         </button>
         <button
-          class="bg-[#282454] text-white font-bold rounded-[10px] uppercase tracking-wider text-sm px-8 py-6"
+          class="bg-[#282454] text-white font-bold rounded-[10px] uppercase tracking-wider text-sm px-8 py-6 max-sm:text-[0.8rem] max-sm:px-7 max-sm:py-4"
         >
           {{ learnMore }}
         </button>
@@ -75,7 +75,7 @@
     </div>
   </main>
   <div class="max-w-[1440px] m-auto">
-    <Featured />
+    <!-- <Featured /> -->
     <Crypto id="market" />
     <NewEra id="about" />
     <JoinUs id="join" />

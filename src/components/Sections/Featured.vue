@@ -5,7 +5,7 @@
         Crypto app has been featured on
       </h2>
 
-      <div class="flex items-center justify-around max-sm:flex-wrap">
+      <div class="flex items-center justify-around">
         <img
           v-for="(items, index) in companyImg"
           :key="index"
@@ -31,12 +31,6 @@ export default {
         },
         {
           img: "https://assets-global.website-files.com/5f8f28722b0eae892596eb35/5fac23736626902953e36765_logo-company-3-crypto-template.svg",
-        },
-        {
-          img: "https://assets-global.website-files.com/5f8f28722b0eae892596eb35/5fac23739ac6bbe17747ebd3_logo-company-4-crypto-template.svg",
-        },
-        {
-          img: "https://assets-global.website-files.com/5f8f28722b0eae892596eb35/5fac2374cafaca6db67472ea_logo-company-5-crypto-template.svg",
         },
       ],
     };

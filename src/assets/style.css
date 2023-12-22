@@ -16,11 +16,15 @@
 }
 
 .clamp {
-  font-size: clamp(2rem, 8vw, 4rem);
+  font-size: clamp(2.3rem, 8vw, 4rem);
 }
 
-.paraclamp {
-  font-size: clamp(0.925rem, 8vw, 1.25rem);
+.eraclamp {
+  font-size: clamp(2.5rem, 8vw, 3.75rem);
+}
+
+.joinclamp {
+  font-size: clamp(2.5rem, 8vw, 5rem);
 }
 
 @keyframes bounce {

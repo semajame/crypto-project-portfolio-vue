@@ -1,12 +1,14 @@
 <template>
-  <footer class="flex justify-between items-center pt-[10rem]">
-    <!-- bg-[url(@/assets/images/footer-bg.png)] bg-no-repeat bg-center -->
-    <img
+  <footer
+    class="flex justify-between items-center py-[5rem] max-w-[1440px] m-auto"
+  >
+    <!-- <img
       src="https://assets-global.website-files.com/62ea94aa50fb59ad3ea476f0/62eb0d1a7701f11342289a72_image-2-section-feature-cryptocurrency-template.svg"
       alt=""
-    />
+      class="max-w-[250px] max-h-[250px] absolute -left-10 -z-10"
+    /> -->
     <nav class="m-auto">
-      <ul class="flex justify-center items-center gap-10">
+      <ul class="flex justify-center items-center gap-10 max-sm:gap-5">
         <li v-for="(items, index) in socialLinks" :key="index" class="p-2">
           <a :href="items.link" target="_blank">
             <img
@@ -23,10 +25,11 @@
       </div>
     </nav>
 
-    <img
+    <!-- <img
       src="https://assets-global.website-files.com/62ea94aa50fb59ad3ea476f0/62eb0d1aa521b81c53133cba_image-1-section-feature-cryptocurrency-template.svg"
       alt=""
-    />
+      class="max-w-[250px] max-h-[250px] absolute -right-10 -z-10"
+    />-->
   </footer>
 </template>
 

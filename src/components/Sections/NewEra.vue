@@ -1,32 +1,40 @@
 <template>
-  <section class="text-white p-10 pb-[10rem]">
+  <section class="text-white p-10 pb-[10rem] max-sm:p-5 max-sm:pb-[10rem]">
     <div class="text-center">
-      <h2 class="pb-10 text-6xl">
+      <h2 class="pb-10 eraclamp">
         {{ header }}
       </h2>
-      <p class="p-10 text-md">
+      <p class="p-10 text-md max-sm:p-0 max-sm:pb-10">
         {{ paragraph }}
       </p>
     </div>
-    <div class="flex justify-around pt-10">
-      <div class="flex flex-col justify-around">
+    <div class="flex justify-around pt-10 max-sm:flex-col">
+      <div
+        class="flex flex-col justify-around max-sm:justify-center max-sm:gap-10"
+      >
         <div v-for="(items, index) in headerLeft" :key="index">
-          <h2 class="font-bold text-6xl">
+          <h2 class="font-bold text-6xl max-sm:text-center">
             {{ items.header }}
             <span
               class="bg-gradient-to-tr from-[#ac50ef] via-[#7059fb] to-[#2ecff6] text-[#6248ff] text-transparent bg-clip-text font-normal -ml-3"
               >{{ items.span }}</span
             >
           </h2>
-          <p class="mt-2 w-[150px] text-slate-400">{{ items.paragraph }}</p>
+          <p
+            class="mt-2 w-[150px] text-slate-400 max-sm:text-center max-sm:m-auto"
+          >
+            {{ items.paragraph }}
+          </p>
         </div>
       </div>
       <div>
         <img :src="imageGlobe" alt="Globe Image" class="w-[600px] h-[600px]" />
       </div>
-      <div class="flex flex-col justify-around">
+      <div
+        class="flex flex-col justify-around max-sm:gap-10 max-sm:justify-center"
+      >
         <div v-for="(items, index) in headerRight" :key="index">
-          <h2 class="font-bold text-6xl">
+          <h2 class="font-bold text-6xl max-sm:text-center">
             {{ items.header }}
 
             <span
@@ -34,7 +42,11 @@
               >{{ items.span }}</span
             >
           </h2>
-          <p class="mt-2 w-[150px] text-slate-400">{{ items.paragraph }}</p>
+          <p
+            class="mt-2 w-[150px] text-slate-400 max-sm:text-center max-sm:m-auto"
+          >
+            {{ items.paragraph }}
+          </p>
         </div>
       </div>
     </div>

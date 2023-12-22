@@ -67,7 +67,6 @@
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
 import Contact from "@/components/Sections/Contact.vue";
 import Crypto from "@/components/Sections/Crypto.vue";
 import NewEra from "@/components/Sections/NewEra.vue";
@@ -101,7 +100,7 @@ export default {
     NewEra,
     JoinUs,
     Contact,
-    Header,
+
     Featured,
   },
 
@@ -125,7 +124,7 @@ export default {
         },
         {
           scrollTo: "join",
-          link: "Join",
+          link: "Join Us",
         },
       ],
 

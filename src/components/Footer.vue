@@ -1,5 +1,5 @@
 <template>
-  <footer class="flex justify-between items-center">
+  <footer class="flex justify-between items-center pt-[10rem]">
     <!-- bg-[url(@/assets/images/footer-bg.png)] bg-no-repeat bg-center -->
     <img
       src="https://assets-global.website-files.com/62ea94aa50fb59ad3ea476f0/62eb0d1a7701f11342289a72_image-2-section-feature-cryptocurrency-template.svg"

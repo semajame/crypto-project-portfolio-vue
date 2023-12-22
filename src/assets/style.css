@@ -5,7 +5,7 @@
 @layer base {
   body {
     font-family: "Onest", sans-serif;
-    max-width: 1440px;
+
     margin: 0 auto;
     min-height: 100%;
   }
@@ -13,6 +13,14 @@
   .animate-slow-bounce {
     animation: bounce 2s infinite;
   }
+}
+
+.clamp {
+  font-size: clamp(2rem, 8vw, 4rem);
+}
+
+.paraclamp {
+  font-size: clamp(0.925rem, 8vw, 1.25rem);
 }
 
 @keyframes bounce {

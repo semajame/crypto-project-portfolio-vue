@@ -1,5 +1,5 @@
 <template>
-  <section class="px-[5rem] pb-[10rem]">
+  <section class="px-[2rem] pb-[10rem]">
     <h2 class="text-[3rem] text-white">Market Update</h2>
 
     <table v-if="coinData" class="w-full mt-12 border">

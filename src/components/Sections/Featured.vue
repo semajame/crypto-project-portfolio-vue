@@ -5,7 +5,7 @@
         Crypto app has been featured on
       </h2>
 
-      <div class="flex items-center justify-around">
+      <div class="flex items-center justify-around max-sm:flex-wrap">
         <img
           v-for="(items, index) in companyImg"
           :key="index"

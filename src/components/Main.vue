@@ -100,17 +100,29 @@ const scrollToDirective = {
       const targetElement = document.getElementById(targetId);
 
       if (targetElement) {
-        const offset = 150; // You can adjust this value for your desired margin or padding
+        const offset = 150;
         const scrollTo = targetElement.offsetTop - offset;
 
         window.scrollTo({
           behavior: "smooth",
           top: scrollTo,
         });
+
+        closeNav();
       }
     });
   },
 };
+
+function openNav() {
+  document.querySelector("ul").classList.add("max-sm:block");
+  document.querySelector("ul").classList.remove("max-sm:hidden");
+}
+
+function closeNav() {
+  document.querySelector("ul").classList.remove("max-sm:block");
+  document.querySelector("ul").classList.add("max-sm:hidden");
+}
 
 export default {
   components: {
@@ -128,19 +140,9 @@ export default {
   mounted() {
     const closeButton = document.querySelector("#closeButton");
     const openButton = document.querySelector("#openButton");
-    const nav = document.querySelector("ul");
 
-    openButton.addEventListener("click", () => {
-      console.log("open");
-      nav.classList.add("max-sm:block");
-      nav.classList.remove("max-sm:hidden");
-    });
-
-    closeButton.addEventListener("click", () => {
-      console.log("close");
-      nav.classList.remove("max-sm:block");
-      nav.classList.add("max-sm:hidden");
-    });
+    openButton.addEventListener("click", openNav);
+    closeButton.addEventListener("click", closeNav);
   },
 
   data() {

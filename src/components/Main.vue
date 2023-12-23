@@ -41,25 +41,25 @@
   <main class="pb-[5rem] pt-[8rem] relative" id="home">
     <div>
       <h1
-        class="text-white font-extrabold w-[800px] clamp mt-7 mb-10 mx-auto text-center max-sm:w-full"
+        class="text-white font-extrabold clamp mt-7 mb-10 mx-auto text-center max-sm:w-full max-w-[800px]"
       >
         {{ header }}
       </h1>
 
       <p
-        class="text-slate-300 font-sans my-5 text-xl w-[800px] text-center mx-auto px-3 max-sm:w-full max-sm:text-sm"
+        class="text-slate-300 font-sans my-5 text-xl text-center mx-auto max-w-[800px] max-sm:w-full max-sm:text-sm"
       >
         {{ paragraph }}
       </p>
 
       <div class="flex gap-8 my-8 justify-center mt-[4rem]">
         <button
-          class="bg-gradient-to-tr from-[#ac50ef] via-[#7059fb] to-[#2ecff6] text-white font-bold rounded-[10px] uppercase tracking-wider text-sm px-8 py-6 max-sm:px-7 max-sm:py-4 max-sm:text-[0.8rem]"
+          class="bg-gradient-to-tr from-[#ac50ef] via-[#7059fb] to-[#2ecff6] text-white font-bold rounded-[10px] uppercase tracking-wider text-sm px-8 py-6 max-sm:px-7 max-sm:py-4 max-sm:text-[0.7rem]"
         >
           {{ getStarted }}
         </button>
         <button
-          class="bg-[#282454] text-white font-bold rounded-[10px] uppercase tracking-wider text-sm px-8 py-6 max-sm:text-[0.8rem] max-sm:px-7 max-sm:py-4"
+          class="bg-[#282454] text-white font-bold rounded-[10px] uppercase tracking-wider text-sm px-8 py-6 max-sm:text-[0.7rem] max-sm:px-7 max-sm:py-4"
         >
           {{ learnMore }}
         </button>
@@ -100,7 +100,7 @@ const scrollToDirective = {
       const targetElement = document.getElementById(targetId);
 
       if (targetElement) {
-        const offset = 100; // You can adjust this value for your desired margin or padding
+        const offset = 150; // You can adjust this value for your desired margin or padding
         const scrollTo = targetElement.offsetTop - offset;
 
         window.scrollTo({

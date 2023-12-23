@@ -1,5 +1,5 @@
 <template>
-  <section class="px-[2rem] pb-[10rem]">
+  <section class="px-[1.5rem] pb-[10rem]">
     <h2 class="text-[3rem] text-white">Market Update</h2>
 
     <div class="overflow-y-auto">

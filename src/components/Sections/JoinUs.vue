@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-[5rem] pb-[10rem]">
+  <section class=" pb-[10rem]">
     <div class="text-center">
       <div class="flex justify-center gap-10 items-center">
         <img

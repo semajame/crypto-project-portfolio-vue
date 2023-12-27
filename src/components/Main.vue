@@ -151,13 +151,13 @@ export default {
 
       routerLinks: [
         {
-          scrollTo: "about",
-          link: "About",
+          scrollTo: "market",
+          link: "Market",
         },
 
         {
-          scrollTo: "market",
-          link: "Market",
+          scrollTo: "about",
+          link: "About",
         },
         {
           scrollTo: "join",

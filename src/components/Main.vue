@@ -8,7 +8,7 @@
       </a>
     </div>
     <div>
-      <button class="hidden max-sm:block" id="openButton">
+      <button class="hidden max-sm:block" id="openButton" @click="openNav">
         <img :src="hamburger" alt="Hamburger Icon" class="w-[2rem] h-[2rem]" />
       </button>
 
@@ -17,7 +17,11 @@
           class="flex items-center max-sm:hidden max-sm:absolute max-sm:bottom-0 max-sm:left-0 max-sm:flex-col max-sm:right-0 max-sm:top-0 max-sm:z-20 max-sm:h-[100vh] max-sm:overflow- max-sm:backdrop-blur-sm max-sm:text-center max-sm:items-stretch max-sm:bg-[#000000d0]"
         >
           <div class="flex justify-end pr-5">
-            <button class="hidden max-sm:block max-sm:my-7" id="closeButton">
+            <button
+              class="hidden max-sm:block max-sm:my-7"
+              id="closeButton"
+              @click="closeNav"
+            >
               <img :src="close" alt="Menu Close" class="w-[2rem] h-[2rem]" />
             </button>
           </div>
@@ -108,21 +112,12 @@ const scrollToDirective = {
           top: scrollTo,
         });
 
-        closeNav();
+        document.querySelector("ul").classList.remove("max-sm:block");
+        document.querySelector("ul").classList.add("max-sm:hidden");
       }
     });
   },
 };
-
-function openNav() {
-  document.querySelector("ul").classList.add("max-sm:block");
-  document.querySelector("ul").classList.remove("max-sm:hidden");
-}
-
-function closeNav() {
-  document.querySelector("ul").classList.remove("max-sm:block");
-  document.querySelector("ul").classList.add("max-sm:hidden");
-}
 
 export default {
   components: {
@@ -133,16 +128,29 @@ export default {
     Featured,
   },
 
-  directives: {
-    scrollto: scrollToDirective,
+  setup() {
+    const toggleNav = (open) => {
+      const ul = document.querySelector("ul");
+      ul.classList.toggle("max-sm:block", open);
+      ul.classList.toggle("max-sm:hidden", !open);
+    };
+
+    const openNav = () => {
+      toggleNav(true);
+    };
+
+    const closeNav = () => {
+      toggleNav(false);
+    };
+
+    return {
+      openNav,
+      closeNav,
+    };
   },
 
-  mounted() {
-    const closeButton = document.querySelector("#closeButton");
-    const openButton = document.querySelector("#openButton");
-
-    openButton.addEventListener("click", openNav);
-    closeButton.addEventListener("click", closeNav);
+  directives: {
+    scrollto: scrollToDirective,
   },
 
   data() {

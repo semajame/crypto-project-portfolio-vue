@@ -63,7 +63,7 @@
           {{ getStarted }}
         </button>
         <button
-          class="bg-[#282454] text-white font-bold rounded-[10px] uppercase tracking-wider text-sm px-8 py-6 max-sm:text-[0.7rem] max-sm:px-7 max-sm:py-4"
+          class="bg-[#282454] text-white font-bold rounded-[10px] uppercase tracking-wider text-sm px-8 py-6 max-sm:text-[0.7rem] max-sm:px-7 max-sm:py-4 hover:bg-slate-200 hover:text-gray-600 transition"
         >
           {{ learnMore }}
         </button>
